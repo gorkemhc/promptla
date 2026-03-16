@@ -78,10 +78,26 @@ nav a:hover { color: var(--accent); }
 .container-fluid { max-width: 1300px; margin: 0 auto; }
 #ai-cards h2 { text-align: center; font-size: 2.8rem; margin-bottom: 70px; }
 
-/* 6 kart için 3 sütunlu yapıya geçildi */
-.grid-wrapper { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+/* DÜZELTME: Kartları sıkıştırmak yerine otomatik olarak alt alta atacak yapı */
+.grid-wrapper { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 30px; 
+}
 
-.card { background: var(--card-bg); padding: 35px; border-radius: 12px; border: 1px solid #333; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s; height: 380px; }
+/* DÜZELTME: Sabit height yerine min-height verildi, böylece metin uzasa da taşmaz */
+.card { 
+    background: var(--card-bg); 
+    padding: 35px; 
+    border-radius: 12px; 
+    border: 1px solid #333; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    transition: all 0.3s; 
+    min-height: 380px; 
+    height: 100%;
+}
 .card:hover { transform: translateY(-10px); border-color: var(--accent); box-shadow: 0 15px 40px rgba(0,0,0,0.6); }
 .card-header { font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 15px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; align-self: flex-start; }
 .card-body p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6; }
@@ -96,323 +112,85 @@ footer { padding: 60px; text-align: center; border-top: 1px solid #222; backgrou
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 /* ==========================================================================
-   YENİ EKLENEN KODLAR: DETAY SAYFALARI VE PROMPT KÜTÜPHANESİ
+   MODEL DETAY SAYFALARI (KARTLI YAPI)
    ========================================================================== */
+.detail-section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; animation: fadeIn 0.8s ease-out; }
+.detail-header { text-align: center; margin-bottom: 60px; }
+.detail-header h1 { font-size: 3.2rem; color: var(--accent); margin-bottom: 15px; }
+.detail-header p { font-size: 1.15rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.6; }
 
-/* --- MODEL DETAY SAYFALARI (KARTLI YAPI) --- */
-.detail-section {
-    padding: 80px 5%;
-    max-width: 1200px;
-    margin: 0 auto;
-    animation: fadeIn 0.8s ease-out;
-}
+.detail-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; margin-bottom: 60px; }
+.detail-card { background: var(--card-bg); border: 1px solid #333; padding: 35px; border-radius: 12px; transition: transform 0.3s ease, border-color 0.3s ease; }
+.detail-card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 30px rgba(0, 217, 255, 0.05); }
+.detail-card h3 { color: #fff; font-size: 1.4rem; margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+.detail-card p, .detail-card ul { color: var(--text-muted); line-height: 1.7; font-size: 1rem; }
+.detail-card ul { list-style-type: none; }
+.detail-card ul li { margin-bottom: 12px; position: relative; padding-left: 20px; }
+.detail-card ul li::before { content: "•"; color: var(--accent); position: absolute; left: 0; font-size: 1.2rem; top: -2px; }
+.detail-card p strong { color: #e0e0e0; }
 
-.detail-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.detail-header h1 {
-    font-size: 3.2rem;
-    color: var(--accent);
-    margin-bottom: 15px;
-}
-
-.detail-header p {
-    font-size: 1.15rem;
-    color: var(--text-muted);
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.detail-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
-}
-
-.detail-card {
-    background: var(--card-bg);
-    border: 1px solid #333;
-    padding: 35px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.detail-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent);
-    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.05);
-}
-
-.detail-card h3 {
-    color: #fff;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid var(--accent);
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.detail-card p, .detail-card ul {
-    color: var(--text-muted);
-    line-height: 1.7;
-    font-size: 1rem;
-}
-
-.detail-card ul {
-    list-style-type: none;
-}
-
-.detail-card ul li {
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.detail-card ul li::before {
-    content: "•";
-    color: var(--accent);
-    position: absolute;
-    left: 0;
-    font-size: 1.2rem;
-    top: -2px;
-}
-
-.detail-card p strong {
-    color: #e0e0e0;
-}
-
-/* --- BÖLÜM 3: KARTLAR --- */
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.card {
-    background: var(--card-bg);
-    padding: 35px;
-    border-radius: 12px;
-    border: 1px solid #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s;
-    height: 100%; /* Esnek yükseklik */
-    min-height: 380px; /* Minimum kart yüksekliği */
-    box-sizing: border-box; /* padding dahil */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-}
-
-.card-header {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--accent);
-    display: inline-block;
-    padding-bottom: 5px;
-    align-self: flex-start;
-}
-
-.card-body p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.usage-badge {
-    display: block;
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--accent);
-    padding: 10px;
-    font-size: 0.8rem;
-    border-radius: 6px;
-    font-family: 'Courier New', monospace;
-    border-left: 3px solid var(--accent);
-}
-
-/* --- Ayrıntılı İncele Butonu --- */
-.card-btn {
-    text-align: center;
-    text-decoration: none;
-    background: #2a2a2a;
-    color: #fff;
-    padding: 12px;
-    border-radius: 6px;
-    transition: 0.3s;
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-top: 20px; /* auto yerine sabit boşluk */
-    align-self: flex-start; /* kutu içinde hizala */
-}
-
-.card-btn:hover {
-    background: var(--accent);
-    color: #000;
-}
-
-.back-btn {
-    display: table;
-    margin: 0 auto;
-    padding: 12px 30px;
-    background: transparent;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.back-btn:hover {
-    background: var(--accent);
-    color: #000;
-    box-shadow: 0 0 15px var(--accent-glow);
-}
+.back-btn { display: table; margin: 0 auto; padding: 12px 30px; background: transparent; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.3s; }
+.back-btn:hover { background: var(--accent); color: #000; box-shadow: 0 0 15px var(--accent-glow); }
 
 /* --- YENİ PROMPT KÜTÜPHANESİ SAYFASI --- */
-#prompt-library {
-    padding: 80px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
+#prompt-library { padding: 80px 5%; max-width: 1400px; margin: 0 auto; }
+#prompt-library h2 { text-align: center; font-size: 3rem; margin-bottom: 10px; }
+.prompt-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; }
 
-#prompt-library h2 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
+.prompt-item { background: var(--card-bg); border: 1px solid #333; border-radius: 12px; display: flex; align-items: center; padding: 30px; gap: 25px; transition: 0.3s; }
+.prompt-item:hover { border-color: var(--accent); }
+.prompt-text { flex: 1; }
+.prompt-text h3 { color: var(--accent); margin-bottom: 12px; font-size: 1.3rem; }
+.prompt-text p { color: var(--text-muted); font-family: 'Courier New', monospace; font-size: 0.95rem; line-height: 1.6; background: #151515; padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent); }
 
-.prompt-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
+.prompt-image { flex-shrink: 0; width: 100px; height: 100px; border-radius: 10px; overflow: hidden; border: 1px dashed #555; animation: float 4s ease-in-out infinite; }
+.prompt-image img { width: 100%; height: 100%; object-fit: cover; }
 
-.prompt-item {
-    background: var(--card-bg);
-    border: 1px solid #333;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    gap: 25px;
-    transition: 0.3s;
-}
-
-.prompt-item:hover {
-    border-color: var(--accent);
-}
-
-.prompt-text {
-    flex: 1;
-}
-
-.prompt-text h3 {
-    color: var(--accent);
-    margin-bottom: 12px;
-    font-size: 1.3rem;
-}
-
-.prompt-text p {
-    color: var(--text-muted);
-    font-family: 'Courier New', monospace;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    background: #151515;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 3px solid var(--accent);
-}
-
-.prompt-image {
-    flex-shrink: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px dashed #555;
-    animation: float 4s ease-in-out infinite;
-}
-
-.prompt-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Animasyonlar ve Responsive Düzenlemeler */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); box-shadow: 0 10px 20px var(--accent-glow); }
     100% { transform: translateY(0px); }
 }
 
+/* ==========================================================================
+   KESİN MOBİL UYUM (RESPONSIVE DESIGN) KODLARI
+   ========================================================================== */
+
 @media (max-width: 900px) {
-    .prompt-container { grid-template-columns: 1fr; }
+    /* Genel boşlukları daralt */
+    #hero { flex-direction: column; text-align: center; padding: 60px 5%; gap: 40px; }
+    .hero-content h1 { font-size: 2.8rem; }
+    
+    /* Rehber adımları alt alta geçsin */
+    .steps { flex-direction: column; }
+    
+    /* Detay sayfaları alt alta geçsin */
     .detail-content { grid-template-columns: 1fr; }
+    .detail-header h1 { font-size: 2.5rem; }
+    
+    /* Prompt kütüphanesi alt alta geçsin */
+    .prompt-container { grid-template-columns: 1fr; }
 }
 
-/* ================================
-   TABLET (1024px ve altı)
-================================ */
-@media (max-width: 1024px) {
-
-    #hero{
-        flex-direction: column;
-        text-align:center;
-        gap:40px;
-    }
-
-    .hero-content h1{
-        font-size:2.8rem;
-    }
-
-    .hero-image img{
-        max-width:500px;
-    }
-
-    /* kartlar 2 sütun */
-    .grid-wrapper{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .steps{
-        flex-direction:column;
-    }
-
-}
-
-/* ================================
-   TABLET VE MOBİL MENÜ DÜZENİ
-================================ */
-
-@media (max-width: 900px){
-
-    header{
-        flex-direction: column;
-        align-items: center;
-        gap:15px;
-    }
-
-    nav{
-        width:100%;
-    }
-
-    nav ul{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:20px;
-    }
-
+@media (max-width: 600px) {
+    /* TELEFON EKRANLARI İÇİN ÖZEL DÜZENLEMELER */
+    
+    /* Menüyü ortala ve alt alta diz */
+    header { flex-direction: column; gap: 15px; padding: 15px 5%; }
+    nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    
+    /* Başlıklar küçülsün */
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-image img { max-width: 100%; }
+    #how-to h2, #ai-cards h2, #prompt-library h2 { font-size: 2rem; }
+    
+    /* Prompt item içindeki resmi yukarı alıp metni alta koy */
+    .prompt-item { flex-direction: column; text-align: center; }
+    .prompt-text p { font-size: 0.85rem; padding: 12px; }
+    
+    /* Butonları tam genişlik yap */
+    .btn { display: block; text-align: center; width: 100%; }
+    
+    /* Detay kartlarının içi telefona sığsın */
+    .detail-card { padding: 25px; }
 }
