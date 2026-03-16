@@ -185,6 +185,82 @@ footer { padding: 60px; text-align: center; border-top: 1px solid #222; backgrou
     color: #e0e0e0;
 }
 
+/* --- BÖLÜM 3: KARTLAR --- */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s;
+    height: 100%; /* Esnek yükseklik */
+    min-height: 380px; /* Minimum kart yüksekliği */
+    box-sizing: border-box; /* padding dahil */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.card-header {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+    padding-bottom: 5px;
+    align-self: flex-start;
+}
+
+.card-body p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.usage-badge {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    border-left: 3px solid var(--accent);
+}
+
+/* --- Ayrıntılı İncele Butonu --- */
+.card-btn {
+    text-align: center;
+    text-decoration: none;
+    background: #2a2a2a;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 20px; /* auto yerine sabit boşluk */
+    align-self: flex-start; /* kutu içinde hizala */
+}
+
+.card-btn:hover {
+    background: var(--accent);
+    color: #000;
+}
+
 .back-btn {
     display: table;
     margin: 0 auto;
@@ -275,59 +351,68 @@ footer { padding: 60px; text-align: center; border-top: 1px solid #222; backgrou
     object-fit: cover;
 }
 
+/* Animasyonlar ve Responsive Düzenlemeler */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); box-shadow: 0 10px 20px var(--accent-glow); }
     100% { transform: translateY(0px); }
 }
 
-/* ==========================================================================
-   MOBİL UYUM (RESPONSIVE DESIGN) EKLENTİLERİ
-   ========================================================================== */
-
-/* Tablet ve Küçük Ekranlar (992px ve altı) */
-@media (max-width: 992px) {
-    #hero { flex-direction: column; text-align: center; padding: 60px 5%; gap: 40px; }
-    .hero-content h1 { font-size: 3rem; }
-    .btn-center { margin: 40px auto 0; }
-    .grid-wrapper { grid-template-columns: repeat(2, 1fr); } /* Kartları 2 sütun yap */
+@media (max-width: 900px) {
+    .prompt-container { grid-template-columns: 1fr; }
+    .detail-content { grid-template-columns: 1fr; }
 }
 
-/* Telefonlar (768px ve altı) */
-@media (max-width: 768px) {
-    /* Menü */
-    header { flex-direction: column; gap: 15px; padding: 15px 5%; text-align: center; }
-    nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
-    
-    /* Ana Ekran (Hero) */
-    #hero { padding: 40px 5%; min-height: auto; }
-    .hero-content h1 { font-size: 2.3rem; }
-    .hero-content p { font-size: 1rem; }
-    .hero-image img { width: 100%; max-width: 400px; height: auto; }
-    
-    /* Bölüm Boşlukları ve Başlıklar */
-    #how-to, #ai-cards, #prompt-library, .detail-section { padding: 50px 5%; }
-    #how-to h2, #ai-cards h2, #prompt-library h2 { font-size: 2rem; margin-bottom: 30px; }
-    
-    /* Rehber Adımları (Yan yanaydı, alt alta yaptık) */
-    .steps { flex-direction: column; gap: 20px; }
-    
-    /* Yapay Zeka Kartları (Tek sütuna düşürdük) */
-    .grid-wrapper { grid-template-columns: 1fr; }
-    .card { height: auto; min-height: 350px; }
-    
-    /* Prompt Kütüphanesi (Resimleri üste aldık) */
-    .prompt-container { grid-template-columns: 1fr; }
-    .prompt-item { flex-direction: column; text-align: center; gap: 15px; padding: 20px; }
-    .prompt-text p { font-size: 0.85rem; padding: 15px; }
-    
-    /* Detay Sayfaları (ChatGPT, Kimi vb.) */
-    .detail-header h1 { font-size: 2.2rem; }
-    .detail-header p { font-size: 1rem; }
-    .detail-content { grid-template-columns: 1fr; }
-    .detail-card { padding: 25px; }
-    
-    /* Alt Kısım */
-    footer { padding: 30px 5%; }
-    .socials { word-spacing: 10px; font-size: 0.85rem; }
+/* ================================
+   TABLET (1024px ve altı)
+================================ */
+@media (max-width: 1024px) {
+
+    #hero{
+        flex-direction: column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .hero-image img{
+        max-width:500px;
+    }
+
+    /* kartlar 2 sütun */
+    .grid-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .steps{
+        flex-direction:column;
+    }
+
+}
+
+/* ================================
+   TABLET VE MOBİL MENÜ DÜZENİ
+================================ */
+
+@media (max-width: 900px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
 }
