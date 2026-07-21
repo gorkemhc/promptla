@@ -1,8 +1,0 @@
-PROMPTLA STATİK ALTYAPI NOTU
-
-Bu paket şu aşamada tamamen HTML, CSS ve JavaScript ile çalışır.
-- Firebase bağlantısı yoktur.
-- PHP veya MySQL bağlantısı yoktur.
-- Harici veritabanı kullanılmaz.
-- Kullanıcı tercihleri, favoriler ve demo içerikleri yalnızca tarayıcının localStorage alanında tutulur.
-- Gerçek veritabanı ve kullanıcı senkronizasyonu sonraki geliştirme aşamasında eklenebilir.

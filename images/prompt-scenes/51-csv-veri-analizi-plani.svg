@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081318"/><stop offset="1" stop-color="#12313a"/></linearGradient>
+      <radialGradient id="glowA"><stop stop-color="#5ee6dd" stop-opacity=".75"/><stop offset="1" stop-color="#5ee6dd" stop-opacity="0"/></radialGradient>
+      <radialGradient id="glowB"><stop stop-color="#7aa7ff" stop-opacity=".85"/><stop offset="1" stop-color="#7aa7ff" stop-opacity=".15"/></radialGradient>
+      <linearGradient id="shoeBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe76a"/><stop offset="1" stop-color="#ff7db4"/></linearGradient>
+      <linearGradient id="reelBg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7aa7ff"/><stop offset="1" stop-color="#5ee6dd"/></linearGradient>
+      <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern>
+      <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".35"/></filter>
+    </defs>
+    <rect width="1200" height="675" fill="url(#bg)"/>
+    <rect width="1200" height="675" fill="url(#grid)"/>
+    <circle cx="1020" cy="90" r="230" fill="#7aa7ff" opacity=".08"/>
+    <circle cx="180" cy="620" r="260" fill="#5ee6dd" opacity=".06"/>
+    <g filter="url(#shadow)"><rect x="650" y="170" width="430" height="320" rx="16" fill="#f8fafc" stroke="#5ee6dd" stroke-width="3" opacity="1"/><line x1="650" y1="170" x2="650" y2="490" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="736" y1="170" x2="736" y2="490" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="822" y1="170" x2="822" y2="490" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="908" y1="170" x2="908" y2="490" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="994" y1="170" x2="994" y2="490" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="650" y1="170" x2="1080" y2="170" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="650" y1="223" x2="1080" y2="223" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="650" y1="276" x2="1080" y2="276" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="650" y1="329" x2="1080" y2="329" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="650" y1="382" x2="1080" y2="382" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><line x1="650" y1="435" x2="1080" y2="435" stroke="#8a96a8" stroke-width="2" opacity="0.45" stroke-linecap="round"/><rect x="675" y="390" width="45" height="80" rx="6" fill="#5ee6dd" stroke="none" stroke-width="2" opacity="1"/><rect x="761" y="350" width="45" height="120" rx="6" fill="#7aa7ff" stroke="none" stroke-width="2" opacity="1"/><rect x="847" y="310" width="45" height="160" rx="6" fill="#60f0b2" stroke="none" stroke-width="2" opacity="1"/><rect x="933" y="270" width="45" height="200" rx="6" fill="#ffcf5c" stroke="none" stroke-width="2" opacity="1"/><text x="865" y="215" fill="#182336" font-size="22" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">CSV DATA</text></g>
+    <rect x="55" y="55" width="190" height="42" rx="21" fill="#07101a" stroke="#5ee6dd" stroke-width="2" opacity="0.96"/>
+    <text x="150" y="83" fill="#5ee6dd" font-size="14" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">ARAŞTIRMA VE VERI</text>
+    <text x="70" y="180" fill="#f4f7ff" font-size="48" font-weight="900" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">CSV Veri Analizi Planı</text>
+    <text x="72" y="390" fill="#7aa7ff" font-size="19" font-weight="800" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Veri analizi</text>
+    <text x="72" y="430" fill="#9eb0c8" font-size="15" font-weight="600" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">ChatGPT • Claude • Gemini</text>
+    <rect x="70" y="495" width="230" height="50" rx="25" fill="#07101a" stroke="#5ee6dd" stroke-width="2" opacity="0.95"/>
+    <text x="185" y="527" fill="#eafcff" font-size="15" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">PROMPTLA • #51</text>
+    </svg>

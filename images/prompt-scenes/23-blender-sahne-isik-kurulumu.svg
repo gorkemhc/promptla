@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071716"/><stop offset="1" stop-color="#0d3028"/></linearGradient>
+      <radialGradient id="glowA"><stop stop-color="#55f0b2" stop-opacity=".75"/><stop offset="1" stop-color="#55f0b2" stop-opacity="0"/></radialGradient>
+      <radialGradient id="glowB"><stop stop-color="#b2ff72" stop-opacity=".85"/><stop offset="1" stop-color="#b2ff72" stop-opacity=".15"/></radialGradient>
+      <linearGradient id="shoeBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe76a"/><stop offset="1" stop-color="#ff7db4"/></linearGradient>
+      <linearGradient id="reelBg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b2ff72"/><stop offset="1" stop-color="#55f0b2"/></linearGradient>
+      <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern>
+      <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".35"/></filter>
+    </defs>
+    <rect width="1200" height="675" fill="url(#bg)"/>
+    <rect width="1200" height="675" fill="url(#grid)"/>
+    <circle cx="1020" cy="90" r="230" fill="#b2ff72" opacity=".08"/>
+    <circle cx="180" cy="620" r="260" fill="#55f0b2" opacity=".06"/>
+    <g filter="url(#shadow)"><rect x="710" y="330" width="300" height="170" rx="12" fill="#10202a" stroke="#55f0b2" stroke-width="3" opacity="1"/><circle cx="760" cy="210" r="48" fill="#fff3aa" stroke="#b2ff72" stroke-width="3" opacity="1"/><circle cx="965" cy="210" r="48" fill="#a9e9ff" stroke="#55f0b2" stroke-width="3" opacity="1"/><line x1="760" y1="260" x2="810" y2="350" stroke="#fff3aa" stroke-width="6" opacity="0.6" stroke-linecap="round"/><line x1="965" y1="260" x2="920" y2="350" stroke="#a9e9ff" stroke-width="6" opacity="0.6" stroke-linecap="round"/><circle cx="860" cy="380" r="65" fill="#38465b" stroke="#b2ff72" stroke-width="3" opacity="1"/><path d="M810 500 L860 380 L910 500 Z" fill="#152c35" stroke="none" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <rect x="55" y="55" width="190" height="42" rx="21" fill="#07101a" stroke="#55f0b2" stroke-width="2" opacity="0.96"/>
+    <text x="150" y="83" fill="#55f0b2" font-size="14" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">3D VE OYUN</text>
+    <text x="70" y="180" fill="#f4f7ff" font-size="48" font-weight="900" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Blender Sahne Işık</text><text x="70" y="242" fill="#f4f7ff" font-size="48" font-weight="900" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Kurulumu</text>
+    <text x="72" y="390" fill="#b2ff72" font-size="19" font-weight="800" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Render</text>
+    <text x="72" y="430" fill="#9eb0c8" font-size="15" font-weight="600" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">ChatGPT • Claude • Gemini</text>
+    <rect x="70" y="495" width="230" height="50" rx="25" fill="#07101a" stroke="#55f0b2" stroke-width="2" opacity="0.95"/>
+    <text x="185" y="527" fill="#eafcff" font-size="15" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">PROMPTLA • #23</text>
+    </svg>

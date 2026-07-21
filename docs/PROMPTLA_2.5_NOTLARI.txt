@@ -1,0 +1,9 @@
+PROMPTLA 2.5 NAVBAR FIX
+
+- Tüm ana sayfalarda navbar davranışı eşitlendi.
+- 85px aşağı kaydırınca menü animasyonla gizlenir.
+- Blur arka plan üzerinde yalnızca ortadaki PROMPTLA logosu kalır.
+- Sayfanın başına dönünce tam menü geri gelir.
+- Kaydırma sırasında açık dropdownlar otomatik kapanır.
+- Masaüstü dropdown geçiş boşluğu kapatıldı ve titreşim azaltıldı.
+- Mobilde condensed durumda hamburger erişilebilir kalır.

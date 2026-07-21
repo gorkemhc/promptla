@@ -1,0 +1,7 @@
+PROMPTLA 2.4
+- Tüm ana içerik sayfalarında ortalanmış logo ve aynı navbar kullanıldı.
+- Ana sayfada Ana Sayfa bağlantısı gösterilmedi; diğer sayfalarda korundu.
+- Ana sayfadaki otomasyon kartları yuvarlatılmış stroke çerçeve içine alındı.
+- Otomasyon kartları kesintisiz, sonsuz döngülü yatay animasyona dönüştürüldü.
+- Eski sosyal alan sayfası ve sosyal gönderi yardımcı kodları kaldırıldı.
+- Statik/localStorage hesap ve favori prompt sistemi korundu.

@@ -1,0 +1,24 @@
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editör
+.vscode/
+.idea/
+*.code-workspace
+
+# Geçici dosyalar
+*.tmp
+*.log
+*.bak
+~$*
+
+# Ortam ve gizli bilgiler
+.env
+.env.*
+!.env.example
+
+# Paket klasörleri (ileride eklenirse)
+node_modules/
+dist/

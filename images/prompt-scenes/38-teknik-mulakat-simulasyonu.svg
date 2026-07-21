@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111d"/><stop offset="1" stop-color="#102b42"/></linearGradient>
+      <radialGradient id="glowA"><stop stop-color="#57c7ff" stop-opacity=".75"/><stop offset="1" stop-color="#57c7ff" stop-opacity="0"/></radialGradient>
+      <radialGradient id="glowB"><stop stop-color="#60f0b2" stop-opacity=".85"/><stop offset="1" stop-color="#60f0b2" stop-opacity=".15"/></radialGradient>
+      <linearGradient id="shoeBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe76a"/><stop offset="1" stop-color="#ff7db4"/></linearGradient>
+      <linearGradient id="reelBg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#60f0b2"/><stop offset="1" stop-color="#57c7ff"/></linearGradient>
+      <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern>
+      <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".35"/></filter>
+    </defs>
+    <rect width="1200" height="675" fill="url(#bg)"/>
+    <rect width="1200" height="675" fill="url(#grid)"/>
+    <circle cx="1020" cy="90" r="230" fill="#60f0b2" opacity=".08"/>
+    <circle cx="180" cy="620" r="260" fill="#57c7ff" opacity=".06"/>
+    <g filter="url(#shadow)"><circle cx="760" cy="275" r="62" fill="#d5ab8b" stroke="none" stroke-width="2" opacity="1"/><circle cx="960" cy="275" r="62" fill="#b88468" stroke="none" stroke-width="2" opacity="1"/><path d="M665 520 Q760 350 855 520 Z" fill="#57c7ff" stroke="none" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M865 520 Q960 350 1055 520 Z" fill="#60f0b2" stroke="none" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/><rect x="790" y="160" width="140" height="65" rx="16" fill="#0f1c2d" stroke="#5f728c" stroke-width="2" opacity="1"/><text x="860" y="200" fill="#fff" font-size="17" font-weight="800" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">INTERVIEW</text></g>
+    <rect x="55" y="55" width="190" height="42" rx="21" fill="#07101a" stroke="#57c7ff" stroke-width="2" opacity="0.96"/>
+    <text x="150" y="83" fill="#57c7ff" font-size="14" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">KARIYER</text>
+    <text x="70" y="180" fill="#f4f7ff" font-size="48" font-weight="900" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Teknik Mülakat</text><text x="70" y="242" fill="#f4f7ff" font-size="48" font-weight="900" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Simülasyonu</text>
+    <text x="72" y="390" fill="#60f0b2" font-size="19" font-weight="800" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">Mülakat</text>
+    <text x="72" y="430" fill="#9eb0c8" font-size="15" font-weight="600" text-anchor="start" opacity="1" font-family="Manrope,Arial,sans-serif">ChatGPT • Claude • Gemini</text>
+    <rect x="70" y="495" width="230" height="50" rx="25" fill="#07101a" stroke="#57c7ff" stroke-width="2" opacity="0.95"/>
+    <text x="185" y="527" fill="#eafcff" font-size="15" font-weight="900" text-anchor="middle" opacity="1" font-family="Manrope,Arial,sans-serif">PROMPTLA • #38</text>
+    </svg>

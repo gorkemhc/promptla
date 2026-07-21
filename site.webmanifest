@@ -1,9 +1,9 @@
 {
-  "name": "PROMPTLA — Prompt Kütüphanesi",
+  "name": "PROMPTLA — AI Studio ve Prompt Kütüphanesi",
   "short_name": "PROMPTLA",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#060b14",
+  "background_color": "#050912",
   "theme_color": "#00d9ff",
-  "description": "Türkçe prompt kütüphanesi ve doldurulabilir Prompt Builder."
+  "description": "Claude Code, Codex, n8n, MCP, terminal laboratuvarı ve profesyonel prompt kütüphanesini birleştiren Türkçe AI geliştirme platformu."
 }

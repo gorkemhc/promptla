@@ -1,0 +1,35 @@
+PROMPTLA 2.3 — AI STUDIO ANA SAYFA YENİLEME
+
+ANA SAYFA
+- AI Studio ana odak hâline getirildi.
+- PROMPTLA logosu üstte ortalandı; menü logonun altına yerleştirildi.
+- Sayfa aşağı kaydırıldığında menü gizlenir, bulanık arka plan üzerinde yalnızca logo kalır.
+- Sabit kare çizgili arka plan ve mevcut turkuaz/mor tema korunur.
+- AI Studio bilgileri önce, prompt kütüphanesi daha aşağıda gösterilir.
+- Haftanın promptunda kullanıcının verdiği MockVerse ekran görüntüsü kullanılır.
+
+AI STUDIO VE TERMİNAL
+- Claude Code, OpenAI Codex, n8n, MCP ve hazır otomasyon akışları öne çıkarıldı.
+- Terminal Laboratuvarı komut girişi terminal penceresinin içine alındı.
+- Terminal alanı eğitim simülatörüdür; gerçek bilgisayar dosyalarını değiştirmez.
+
+HESAP VE PROFİL
+- Admin paneli, sosyal alan, iletişim ve geri bildirim sayfaları kaldırıldı.
+- Hesap yalnızca beğenilen promptları, kaydedilen promptları ve yorumları localStorage ile saklar.
+- Profilde yalnızca Kaydedilenler, Beğenilenler ve Yorumlarım sekmeleri bulunur.
+- Koleksiyon oluşturma/kaydetme sistemi kaldırıldı.
+
+PROMPT GÖRSELLERİ
+- 60 promptun her biri için içeriğini anlatan farklı SVG kapak hazırlandı.
+- Tüm yeni kapaklar images/prompt-scenes klasöründedir.
+- Sosyal medya kampanyası promptunda ayakkabı reklam posteri teması kullanılmıştır.
+- Görseller harici bağlantı gerektirmez ve siteyle birlikte çevrimdışı açılır.
+
+ALTYAPI
+- Firebase, PHP, MySQL ve uzaktan veritabanı bağlantısı yoktur.
+- Site statik HTML/CSS/JavaScript olarak çalışır.
+- ZIP açıldıktan sonra index.html çift tıklanarak başlatılabilir.
+
+PROFİL BAĞLANTILARI
+- LinkedIn ve GitHub adresleri henüz verilmediği için Hakkımızda sayfasında yer tutucu bırakıldı.
+- Adresleri assets/site-links.js dosyasına ekleyebilirsin.

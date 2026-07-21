@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://promptla.page.gd/</loc></url>
-  <url><loc>https://promptla.page.gd/modeller.html</loc></url>
-  <url><loc>https://promptla.page.gd/promptlar.html</loc></url>
-  <url><loc>https://promptla.page.gd/prompt-builder.html</loc></url>
-  <url><loc>https://promptla.page.gd/koleksiyonlar.html</loc></url>
-  <url><loc>https://promptla.page.gd/sosyal.html</loc></url>
-  <url><loc>https://promptla.page.gd/hakkimizda.html</loc></url>
-  <url><loc>https://promptla.page.gd/iletisim.html</loc></url>
-  <url><loc>https://promptla.page.gd/ai-studio.html</loc></url>
-  <url><loc>https://promptla.page.gd/terminal-lab.html</loc></url>
-  <url><loc>https://promptla.page.gd/claude-code-rehberi.html</loc></url>
-  <url><loc>https://promptla.page.gd/codex-rehberi.html</loc></url>
-  <url><loc>https://promptla.page.gd/n8n-rehberi.html</loc></url>
-  <url><loc>https://promptla.page.gd/mcp-rehberi.html</loc></url>
-  <url><loc>https://promptla.page.gd/otomasyon-sablonlari.html</loc></url>
-  <url><loc>https://promptla.page.gd/claude-code-vs-codex.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/modeller.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/promptlar.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/prompt-builder.html</loc></url>
+<url><loc>https://promptla.page.gd/pages/hakkimizda.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/ai-studio.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/terminal-lab.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/claude-code-rehberi.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/codex-rehberi.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/n8n-rehberi.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/mcp-rehberi.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/otomasyon-sablonlari.html</loc></url>
+  <url><loc>https://promptla.page.gd/pages/claude-code-vs-codex.html</loc></url>
 </urlset>

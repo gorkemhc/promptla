@@ -1,0 +1,11 @@
+LinkedIn ve GitHub bağlantılarını eklemek için:
+
+assets/site-links.js dosyasını aç.
+Aşağıdaki alanlara tam profil bağlantılarını yaz:
+
+linkedin: 'LINKEDIN_ADRESI',
+github: 'GITHUB_ADRESI'
+
+Örnek:
+linkedin: 'https://www.linkedin.com/in/kullaniciadi',
+github: 'https://github.com/kullaniciadi'
