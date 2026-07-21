@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROMPTLA - Yapay Zeka Modelleri ve Prompt Eğitimi</title>
   <meta name="description" content="PROMPTLA - Yapay zeka, prompt eğitimi ve sosyal paylaşım platformu.">
-  <link rel="stylesheet" href="assets/css/style.css?v=mobilefix2">
+  <link rel="stylesheet" href="assets/style.css?v=mobilefix2">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="canonical" href="https://gorkemhc.github.io/promptla/">
+  <link rel="canonical" href="https://promptla.page.gd/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="PROMPTLA">
   <meta property="og:description" content="Türkçe prompt kütüphanesi, Prompt Builder ve yapay zeka öğrenme platformu.">
-  <meta property="og:image" content="https://gorkemhc.github.io/promptla/assets/images/urun1.webp">
-  <meta property="og:url" content="https://gorkemhc.github.io/promptla/">
+  <meta property="og:image" content="https://promptla.page.gd/images/urun1.webp">
+  <meta property="og:url" content="https://promptla.page.gd/">
+  <link rel="stylesheet" href="assets/ai-studio.css?v=1">
 </head>
 <body class="site-shell" data-page="home" data-root="">
 <header>
@@ -20,22 +21,34 @@
   <div class="hamburger" id="hamburger" onclick="toggleMenu(event)"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
   <nav>
     <ul id="menu">
-      <li><a href="index.html#hero">Ana Sayfa</a></li>
-      <li><a href="pages/modeller/index.html">Yapay Zeka Modelleri</a></li>
+      
+      <li><a href="modeller.html">Yapay Zeka Modelleri</a></li>
       <li class="nav-dropdown">
-        <a href="pages/promptlar/index.html" class="nav-dropdown-toggle">Promptlar</a>
+        <a href="promptlar.html" class="nav-dropdown-toggle">Promptlar</a>
         <div class="nav-submenu">
-          <a href="pages/promptlar/index.html?cat=gorsel">Görsel Promptları</a>
-          <a href="pages/promptlar/index.html?cat=video">Video Promptları</a>
-          <a href="games/index.html">Oyunlar</a>
-          <a href="pages/promptlar/index.html?cat=3d">3D Modelleme</a>
-          <a href="pages/promptlar/index.html?cat=odev">Ödev Düzenleme</a>
-          <a href="pages/promptlar/index.html?cat=kod">Kod Promptları</a>
+          <a href="promptlar.html?cat=gorsel">Görsel Promptları</a>
+          <a href="promptlar.html?cat=video">Video Promptları</a>
+          <a href="./oyunlar/index.html">Oyunlar</a>
+          <a href="promptlar.html?cat=3d">3D Modelleme</a>
+          <a href="promptlar.html?cat=odev">Ödev Düzenleme</a>
+          <a href="promptlar.html?cat=kod">Kod Promptları</a>
         </div>
       </li>
-      <li><a href="pages/topluluk/index.html" class="nav-highlight">Sosyal</a></li>
-      <li><a href="pages/kurumsal/hakkimizda.html">Hakkımızda</a></li>
-      <li><a href="pages/kurumsal/iletisim.html">İletişim</a></li>
+      <li class="nav-dropdown ai-nav-dropdown">
+  <a href="ai-studio.html" class="nav-dropdown-toggle ai-nav-link">AI Studio</a>
+  <div class="nav-submenu">
+    <a href="ai-studio.html">Merkezi Aç</a>
+    <a href="terminal-lab.html">Terminal Laboratuvarı</a>
+    <a href="claude-code-rehberi.html">Claude Code</a>
+    <a href="codex-rehberi.html">OpenAI Codex</a>
+    <a href="n8n-rehberi.html">n8n Otomasyon</a>
+    <a href="mcp-rehberi.html">MCP Entegrasyonları</a>
+    <a href="otomasyon-sablonlari.html">Hazır Akışlar</a>
+  </div>
+</li>
+      <li><a href="sosyal.html" class="nav-highlight">Sosyal</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
       <span id="customNavLinks"></span>
       <li id="accountMenuSlot" class="account-menu"><button class="account-btn" onclick="window.openAuthModal && window.openAuthModal('login')" type="button">Hesap</button></li>
     </ul>
@@ -47,25 +60,27 @@
     <span class="eyebrow" id="heroEyebrow">YAPAY ZEKA • EĞİTİM • PROMPT • TOPLULUK</span>
     <h1 id="heroTitle">Yapay zekayı sadece kullanma, mantığını da öğren.</h1>
     <p id="heroDescription">PROMPTLA; yapay zeka araçlarını tanıtan, prompt yazım mantığını öğreten, örnek üretimleri gösteren ve kullanıcıların paylaşım yapabildiği modern bir öğrenme platformudur.</p>
-    <div class="hero-buttons"><a href="pages/modeller/index.html" class="btn" id="heroPrimaryBtn">Modelleri İncele</a><a href="pages/promptlar/index.html" class="btn btn-secondary" id="heroSecondaryBtn">Promptlara Git</a></div>
-    <div class="hero-info-cards"><div class="hero-info-card"><strong>Model Rehberi</strong><span>Hangi araç ne için kullanılır?</span></div><div class="hero-info-card"><strong>Prompt Eğitimi</strong><span>Örneklerle mantığı öğren</span></div><div class="hero-info-card"><strong>Topluluk</strong><span>Paylaş, incele, geliş</span></div></div>
+    <div class="hero-buttons"><a href="ai-studio.html" class="btn" id="heroPrimaryBtn">AI Studio’yu Keşfet</a><a href="promptlar.html" class="btn btn-secondary" id="heroSecondaryBtn">Promptlara Git</a></div>
+    <div class="hero-info-cards"><div class="hero-info-card"><strong>Model Rehberi</strong><span>Hangi araç ne için kullanılır?</span></div><div class="hero-info-card"><strong>Prompt Eğitimi</strong><span>Örneklerle mantığı öğren</span></div><div class="hero-info-card"><strong>AI Studio</strong><span>Terminal, ajan ve otomasyon öğren</span></div></div>
   </div>
-  <div class="hero-right"><div class="hero-slider-box" id="heroSliderBox"><div class="hero-slide active"><div class="hero-image-frame"><img src="assets/images/prompt1.webp" alt="Prompt örneği"></div><div class="hero-image-text"><h3>Lego Stil Karakter Promptu</h3><p>Gerçek fotoğrafı oyuncak estetiğine dönüştüren yaratıcı prompt örneği.</p></div></div></div></div>
+  <div class="hero-right"><div class="hero-slider-box" id="heroSliderBox"><div class="hero-slide active"><div class="hero-image-frame"><img src="images/prompt1.webp" alt="Prompt örneği"></div><div class="hero-image-text"><h3>Lego Stil Karakter Promptu</h3><p>Gerçek fotoğrafı oyuncak estetiğine dönüştüren yaratıcı prompt örneği.</p></div></div></div></div>
 </section>
 <section class="platform-stats-section"><div class="container-wide"><div id="platformStats" class="platform-stats"></div></div></section>
+<section class="home-ai-spotlight"><div class="home-ai-grid"><div class="home-ai-copy"><span class="ai-kicker"><span class="ai-kicker-dot"></span>YENİ • PROMPTLA AI STUDIO</span><h2>Claude Code, Codex ve n8n’i gerçek bir geliştirme akışında birleştir.</h2><p>Terminali sıfırdan öğren, kodlama ajanlarına güvenli görev ver, Git değişikliklerini kontrol et, webhook ve AI Agent otomasyonları kur, MCP ile harici araç bağlantılarını anla.</p><div class="home-ai-list"><div>Gerçek dosyaları değiştirmeyen terminal simülatörü</div><div>Windows ve VS Code odaklı adım adım kurulum</div><div>10 hazır n8n otomasyon mimarisi</div><div>Güvenlik, izin ve insan onayı kontrol listeleri</div></div><div class="hero-actions"><a class="btn" href="ai-studio.html">AI Studio’yu Aç</a><a class="btn btn-secondary" href="terminal-lab.html">Terminal Laboratuvarı</a></div></div><div class="home-ai-console"><div class="terminal-window"><div class="terminal-titlebar"><div class="terminal-dots"><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span></div><span class="terminal-label">AI DEVELOPMENT PIPELINE</span></div><div class="terminal-body"><span class="terminal-line"><span class="terminal-prompt">PS promptla&gt;</span> <span class="terminal-command">git status</span></span><span class="terminal-line terminal-info">Working tree clean</span><span class="terminal-line"><span class="terminal-prompt">PS promptla&gt;</span> <span class="terminal-command">claude</span></span><span class="terminal-line terminal-success">✓ Repository analysed, plan ready</span><span class="terminal-line"><span class="terminal-prompt">PS promptla&gt;</span> <span class="terminal-command">codex /review</span></span><span class="terminal-line terminal-success">✓ No critical issues found</span><span class="terminal-line"><span class="terminal-prompt">PS promptla&gt;</span> <span class="terminal-command">npx n8n</span></span><span class="terminal-line terminal-info">Workflow editor → localhost:5678</span><span class="terminal-line"><span class="terminal-prompt">PS promptla&gt;</span> <span class="terminal-cursor"></span></span></div></div></div></div></section>
 <section id="how-to" class="section-block"><div class="container"><div class="section-heading"><span class="eyebrow">ÖĞRENME MANTIĞI</span><h2>Yapay zekadan daha iyi sonuç almanın temel yapısı</h2><p>İyi sonuç; doğru modeli seçmek, doğru prompt yazmak ve doğru format istemekle gelir.</p></div><div class="steps-grid"><div class="step-card"><div class="step-no">01</div><h3>Bağlam ver</h3><p>Modele kim olduğunu, hangi konuda konuştuğunu ve hangi çerçevede yanıt vermesi gerektiğini söyle.</p></div><div class="step-card"><div class="step-no">02</div><h3>Görevi net tanımla</h3><p>Metin mi, analiz mi, kod mu, görsel fikri mi istediğini doğrudan belirt.</p></div><div class="step-card"><div class="step-no">03</div><h3>Formatı sabitle</h3><p>Madde madde, kısa, detaylı, tablo halinde ya da öğretici biçimde istemek sonucu güçlendirir.</p></div></div></div></section>
-<section id="ai-cards" class="section-block"><div class="container-wide"><div class="section-heading"><span class="eyebrow">MODEL REHBERİ</span><h2>Temel yapay zeka araçları</h2><p>Hangi modelin hangi işte işine yarayacağını sade, uygulanabilir ve örnekli şekilde keşfet.</p></div><div class="model-grid"><div class="model-card"><div class="card-header">ChatGPT</div><p>Genel amaçlı kullanım, içerik üretimi, öğrenme, açıklama ve fikir geliştirme için güçlü başlangıç modelidir.</p><span class="usage-badge">Kullanım: “Bana adım adım öğret.”</span><a href="pages/modeller/chatgpt.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Microsoft Copilot</div><p>Belge üretimi, ofis iş akışı ve kurumsal kullanım senaryolarında anlamlı avantajlar sunar.</p><span class="usage-badge">Kullanım: “Bu raporu sadeleştir.”</span><a href="pages/modeller/copilot.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Google Gemini</div><p>Çok modlu çalışma, uzun bağlam ve Google servisleriyle kullanım tarafında dikkat çeker.</p><span class="usage-badge">Kullanım: “Bu görseli ve metni birlikte yorumla.”</span><a href="pages/modeller/gemini.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Claude</div><p>Uzun metin okuma, açıklama yapma ve düzenli çıktı üretme tarafında güçlüdür.</p><span class="usage-badge">Kullanım: “Bu metni daha anlaşılır hale getir.”</span><a href="pages/modeller/claude.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Midjourney</div><p>Sanatsal yönü güçlü, estetik ve atmosferli görseller üretmek isteyenler için önemli bir araçtır.</p><span class="usage-badge">Kullanım: “/imagine cinematic neon city”</span><a href="pages/modeller/midjourney.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Kimi</div><p>Uzun içerik işleme ve analiz mantığını incelemek isteyen kullanıcılar için ilgi çekici bir alternatiftir.</p><span class="usage-badge">Kullanım: “Bu içeriği analiz edip akış çıkar.”</span><a href="pages/modeller/kimi.html" class="card-btn">Ayrıntılı İncele</a></div></div><div class="ai-more-center"><a class="btn" href="pages/modeller/index.html">Daha Fazlasını Gör</a></div></div></section>
+<section id="ai-cards" class="section-block"><div class="container-wide"><div class="section-heading"><span class="eyebrow">MODEL REHBERİ</span><h2>Temel yapay zeka araçları</h2><p>Hangi modelin hangi işte işine yarayacağını sade, uygulanabilir ve örnekli şekilde keşfet.</p></div><div class="model-grid"><div class="model-card"><div class="card-header">ChatGPT</div><p>Genel amaçlı kullanım, içerik üretimi, öğrenme, açıklama ve fikir geliştirme için güçlü başlangıç modelidir.</p><span class="usage-badge">Kullanım: “Bana adım adım öğret.”</span><a href="chatgpt.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Microsoft Copilot</div><p>Belge üretimi, ofis iş akışı ve kurumsal kullanım senaryolarında anlamlı avantajlar sunar.</p><span class="usage-badge">Kullanım: “Bu raporu sadeleştir.”</span><a href="copilot.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Google Gemini</div><p>Çok modlu çalışma, uzun bağlam ve Google servisleriyle kullanım tarafında dikkat çeker.</p><span class="usage-badge">Kullanım: “Bu görseli ve metni birlikte yorumla.”</span><a href="gemini.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Claude</div><p>Uzun metin okuma, açıklama yapma ve düzenli çıktı üretme tarafında güçlüdür.</p><span class="usage-badge">Kullanım: “Bu metni daha anlaşılır hale getir.”</span><a href="claude.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Midjourney</div><p>Sanatsal yönü güçlü, estetik ve atmosferli görseller üretmek isteyenler için önemli bir araçtır.</p><span class="usage-badge">Kullanım: “/imagine cinematic neon city”</span><a href="midjourney.html" class="card-btn">Ayrıntılı İncele</a></div><div class="model-card"><div class="card-header">Kimi</div><p>Uzun içerik işleme ve analiz mantığını incelemek isteyen kullanıcılar için ilgi çekici bir alternatiftir.</p><span class="usage-badge">Kullanım: “Bu içeriği analiz edip akış çıkar.”</span><a href="kimi.html" class="card-btn">Ayrıntılı İncele</a></div></div><div class="ai-more-center"><a class="btn" href="modeller.html">Daha Fazlasını Gör</a></div></div></section>
 <section class="section-block weekly-prompt-section"><div class="container-wide"><div id="weeklyPrompt" class="weekly-prompt-card"></div></div></section>
-<section class="section-block"><div class="container-wide"><div class="section-heading"><span class="eyebrow">ÖNE ÇIKANLAR</span><h2>Başlangıç için seçilmiş promptlar</h2><p>Her kartı açıp değişkenleri doldurarak kendi sürümünü oluştur.</p></div><div id="featuredPromptGrid" class="prompt-grid-modern"></div><div class="ai-more-center"><a class="btn" href="pages/promptlar/index.html">60 Promptun Tümünü Gör</a><a class="btn btn-secondary" href="pages/promptlar/koleksiyonlar.html">Hazır Koleksiyonlar</a></div></div></section>
-<section id="game-learning" class="section-block game-learning-home"><div class="container-wide"><div class="section-heading"><span class="eyebrow">OYUNLA ÖĞREN</span><h2>Promptla oyun üretmeyi dene</h2><p>Basit oyunları web üzerinden oyna; altında hangi prompt aşamalarıyla oluşturulduklarını incele.</p></div><div class="game-teaser-grid"><a class="game-teaser-card" href="games/snake.html"><span>🐍</span><strong>Yılan Oyunu</strong><small>Canvas, skor ve mobil yön tuşları</small></a><a class="game-teaser-card" href="games/pacman.html"><span>🟡</span><strong>Pacman Tarzı Labirent</strong><small>Nokta toplama ve kaçınma mekaniği</small></a><a class="game-teaser-card" href="games/hockey.html"><span>🏒</span><strong>2D Hava Hokeyi</strong><small>Rakip paddle ve fizik hissi</small></a><a class="game-teaser-card" href="games/football.html"><span>⚽</span><strong>Futbol Penaltı</strong><small>Kaleciye karşı şut sistemi</small></a></div><div class="site-page-actions" style="justify-content:center"><a class="btn" href="games/index.html">Tüm Oyunları Aç</a></div></div></section>
+<section class="section-block"><div class="container-wide"><div class="section-heading"><span class="eyebrow">ÖNE ÇIKANLAR</span><h2>Başlangıç için seçilmiş promptlar</h2><p>Her kartı açıp değişkenleri doldurarak kendi sürümünü oluştur.</p></div><div id="featuredPromptGrid" class="prompt-grid-modern"></div><div class="ai-more-center"><a class="btn" href="promptlar.html">60 Promptun Tümünü Gör</a><a class="btn btn-secondary" href="koleksiyonlar.html">Hazır Koleksiyonlar</a></div></div></section>
+<section id="game-learning" class="section-block game-learning-home"><div class="container-wide"><div class="section-heading"><span class="eyebrow">OYUNLA ÖĞREN</span><h2>Promptla oyun üretmeyi dene</h2><p>Basit oyunları web üzerinden oyna; altında hangi prompt aşamalarıyla oluşturulduklarını incele.</p></div><div class="game-teaser-grid"><a class="game-teaser-card" href="games/snake.html"><span>🐍</span><strong>Yılan Oyunu</strong><small>Canvas, skor ve mobil yön tuşları</small></a><a class="game-teaser-card" href="games/pacman.html"><span>🟡</span><strong>Pacman Tarzı Labirent</strong><small>Nokta toplama ve kaçınma mekaniği</small></a><a class="game-teaser-card" href="games/hockey.html"><span>🏒</span><strong>2D Hava Hokeyi</strong><small>Rakip paddle ve fizik hissi</small></a><a class="game-teaser-card" href="games/football.html"><span>⚽</span><strong>Futbol Penaltı</strong><small>Kaleciye karşı şut sistemi</small></a></div><div class="site-page-actions" style="justify-content:center"><a class="btn" href="./oyunlar/index.html">Tüm Oyunları Aç</a></div></div></section>
 <section id="iletisim" class="section-block"><div class="container"><div class="section-heading"><span class="eyebrow">İLETİŞİM</span><h2>Geri bildirim gönder</h2><p>Mesajlar bu tarayıcıdaki yerel yönetim paneline kaydedilir.</p></div><form id="contactForm" class="contact-form"><input type="text" name="name" placeholder="Ad Soyad" required><input type="email" name="email" placeholder="E-posta" required><input type="text" name="subject" placeholder="Konu" required><textarea name="message" placeholder="Mesajınız" required></textarea><button class="btn" type="submit">Mesaj Gönder</button></form></div></section>
 <footer>
   <div class="footer-about"><h3>PROMPTLA</h3><p>Yapay zeka araçlarını, prompt mantığını ve topluluk paylaşımlarını tek çatı altında toplayan eğitim odaklı web platformu.</p></div>
   <div class="footer-bottom"><p>© 2026 PROMPTLA. Tüm hakları saklıdır.</p><div class="socials">promptladigital@gmail.com</div></div>
 </footer>
-<script src="assets/js/script.js?v=mobilefix2"></script>
-<script src="assets/js/prompt-data.js?v=2"></script>
-<script src="assets/js/html-app.js?v=mobilefix2"></script>
+<script src="assets/script.js?v=mobilefix2"></script>
+<script src="assets/prompt-data.js?v=2"></script>
+<script src="assets/html-app.js?v=mobilefix2"></script>
 
+<script src="assets/ai-studio.js?v=1"></script>
 </body>
 </html>

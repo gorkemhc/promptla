@@ -1,0 +1,17 @@
+PROMPTLA 2.2 — AI STUDIO
+
+Eklenen ana bölümler:
+- AI Studio merkezi
+- Etkileşimli ve güvenli terminal laboratuvarı
+- Claude Code kurulum ve kullanım rehberi
+- OpenAI Codex kurulum ve kullanım rehberi
+- n8n otomasyon ve AI Agent rehberi
+- MCP entegrasyon rehberi
+- 10 hazır otomasyon mimarisi
+- Claude Code / Codex karşılaştırması
+
+Altyapı:
+- Statik HTML, CSS ve JavaScript
+- Firebase, PHP ve MySQL eklenmedi
+- Terminal laboratuvarı simülasyondur; gerçek komut veya dosya işlemi yapmaz
+- Kurulum bilgileri 21 Temmuz 2026 tarihinde resmi dokümantasyon bağlantılarıyla kontrol edildi
