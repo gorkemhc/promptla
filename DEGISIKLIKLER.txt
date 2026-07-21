@@ -1,0 +1,52 @@
+PROMPTLA 2.0 — Açılır Menü Düzeltmesi (21.07.2026)
+- Promptlar menüsü ile alt menü arasındaki hover boşluğu kapatıldı.
+- Fare alt menüye taşınırken menünün aniden kapanması giderildi.
+- Masaüstünde 220 ms güvenli kapanma gecikmesi eklendi.
+- Mobilde Promptlar menüsü dokunmayla açılıp kapanacak şekilde düzeltildi.
+- Klavye erişimi için aria-expanded, ArrowDown ve Escape desteği eklendi.
+- Tarayıcı önbelleğinin eski CSS/JS dosyalarını kullanmaması için sürüm parametreleri yenilendi.
+
+PROMPTLA 2.0 — STATİK SÜRÜM
+============================
+
+Bu paket PHP, MySQL ve XAMPP gerektirmeden index.html çift tıklanarak çalışacak şekilde düzenlendi.
+Mevcut koyu lacivert, cam efekti, turkuaz ve mor renk sistemi korunmuştur.
+
+EKLENEN / GELİŞTİRİLENLER
+--------------------------
+- 10 ana kategoriye dağıtılmış 60 profesyonel prompt
+- Alt kategori, model, seviye ve etiket tabanlı arama/filtreleme
+- Hızlı, gelişmiş ve uzman prompt sürümleri
+- Doldurulabilir değişkenlere sahip canlı Prompt Builder
+- Ayrı prompt detay sayfaları ve paylaşılabilir slug URL'leri
+- Kopyalanma, beğeni, kayıt ve son görüntülenenler
+- Prompt remixleri ve kullanıcı koleksiyonları
+- Önce/sonra prompt karşılaştırmaları
+- Model karşılaştırma tablosu
+- Haftanın promptu ve öne çıkan içerikler
+- Yerel topluluk paylaşımları, yorum, beğeni, kayıt, rapor ve remix
+- Yerel profil ve yönetim paneli
+- İletişim mesajlarını yerel yönetim paneline kaydetme
+- Canonical, Open Graph, sitemap.xml, robots.txt ve web manifest
+- Lazy-loading görseller, küçük thumbnail dosyaları ve responsive bileşenler
+- Klavye odak stilleri ve hareket azaltma tercihi desteği
+- Yinelenen oyun giriş sayfalarının temizlenmesi
+- PHP, MySQL ve InfinityFree bağlantı bilgilerinin tamamen kaldırılması
+
+YEREL DEMO YÖNETİCİSİ
+---------------------
+E-posta: admin@promptla.local
+Şifre: PromptlaDemo2026!
+
+ÖNEMLİ MİMARİ NOTU
+------------------
+Bu sürüm tamamen statiktir. Hesaplar, favoriler, koleksiyonlar, paylaşımlar ve yönetim verileri
+kullanıcının kendi tarayıcısındaki localStorage alanında tutulur. Farklı cihazlar veya kullanıcılar
+arasında ortak veri senkronizasyonu yapmaz. Gerçek çok kullanıcılı üretim sistemi için güvenli bir
+backend, gerçek oturum yönetimi, CSRF koruması ve sunucu tarafı veritabanı gerekir.
+
+
+MOBİL MENÜ DÜZELTMESİ — 21.07.2026
+- Hamburger JavaScript sınıfı ile CSS sınıfı eşleştirildi (nav.open).
+- Mobil menü tıklama, klavye ve dışarı tıklama davranışı düzeltildi.
+- Açılır Promptlar menüsü için mobil yükseklik ve kaydırma desteği eklendi.

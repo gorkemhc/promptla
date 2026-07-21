@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROMPTLA - Admin Paneli</title>
   <meta name="description" content="PROMPTLA - Yapay zeka, prompt eğitimi ve sosyal paylaşım platformu.">
   <link rel="stylesheet" href="assets/style.css?v=mobilefix2">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="canonical" href="https://promptla.page.gd/admin.html">
+  <title>PROMPTLA - Giriş Yap</title>
+  <link rel="canonical" href="https://promptla.page.gd/giris.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="PROMPTLA">
   <meta property="og:description" content="Türkçe prompt kütüphanesi, Prompt Builder ve yapay zeka öğrenme platformu.">
   <meta property="og:image" content="https://promptla.page.gd/images/urun1.webp">
-  <meta property="og:url" content="https://promptla.page.gd/admin.html">
+  <meta property="og:url" content="https://promptla.page.gd/giris.html">
 </head>
-<body class="site-shell" data-page="admin" data-root="">
+<body class="site-shell" data-page="login" data-root="">
 <header>
   <div class="logo"><a href="index.html" aria-label="Ana sayfaya dön"><span data-logo-text>PROMPT</span><span data-logo-accent>LA</span></a></div>
   <div class="hamburger" id="hamburger" onclick="toggleMenu(event)"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
@@ -41,7 +41,25 @@
     </ul>
   </nav>
 </header>
-<section class="detail-section"><div class="detail-header"><span class="eyebrow">YÖNETİM</span><h1>Yerel Yönetim Paneli</h1><p>Prompt, kullanıcı, moderasyon, mesaj ve site ayarlarını bu tarayıcıda yönet.</p></div><main id="adminApp"><div class="profile-empty-state">Yönetim paneli hazırlanıyor...</div></main></section>
+<section class="detail-section">
+  <div class="detail-header">
+    <span class="eyebrow">HESAP</span>
+    <h1>Giriş Yap</h1>
+    <p>Giriş ve kayıt işlemleri tamamen bu tarayıcıda çalışır; XAMPP, PHP veya MySQL gerekmez.</p>
+  </div>
+  <div class="modal-content" style="display:block;margin:0 auto;position:relative">
+    <div class="auth-tabs">
+      <a class="tab-btn active" href="giris.html">Giriş Yap</a>
+      <a class="tab-btn" href="kayit.html">Kayıt Ol</a>
+    </div>
+    <form id="pageLoginForm" class="auth-form active" action="#">
+      <input type="email" name="email" placeholder="E-posta adresiniz" required>
+      <input type="password" name="password" placeholder="Şifreniz" required>
+      <button class="btn btn-full" type="submit">Giriş Yap</button>
+    </form>
+    <p class="admin-muted" style="text-align:center;margin-top:16px">Hesabın yok mu? <a href="kayit.html">Kayıt ol</a></p>
+  </div>
+</section>
 <footer>
   <div class="footer-about"><h3>PROMPTLA</h3><p>Yapay zeka araçlarını, prompt mantığını ve topluluk paylaşımlarını tek çatı altında toplayan eğitim odaklı web platformu.</p></div>
   <div class="footer-bottom"><p>© 2026 PROMPTLA. Tüm hakları saklıdır.</p><div class="socials">promptladigital@gmail.com</div></div>
