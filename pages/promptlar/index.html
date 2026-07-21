@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROMPTLA - Prompt Kütüphanesi</title>
+  <meta name="description" content="PROMPTLA - Yapay zeka, prompt eğitimi ve sosyal paylaşım platformu.">
+  <link rel="stylesheet" href="../../assets/css/style.css?v=mobilefix2">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://gorkemhc.github.io/promptla/pages/promptlar/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PROMPTLA">
+  <meta property="og:description" content="Türkçe prompt kütüphanesi, Prompt Builder ve yapay zeka öğrenme platformu.">
+  <meta property="og:image" content="https://gorkemhc.github.io/promptla/assets/images/urun1.webp">
+  <meta property="og:url" content="https://gorkemhc.github.io/promptla/pages/promptlar/index.html">
+</head>
+<body class="site-shell" data-page="prompts" data-root="../../">
+<header>
+  <div class="logo"><a href="../../index.html" aria-label="Ana sayfaya dön"><span data-logo-text>PROMPT</span><span data-logo-accent>LA</span></a></div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu(event)"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+  <nav>
+    <ul id="menu">
+      <li><a href="../../index.html#hero">Ana Sayfa</a></li>
+      <li><a href="../modeller/index.html">Yapay Zeka Modelleri</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html" class="nav-dropdown-toggle">Promptlar</a>
+        <div class="nav-submenu">
+          <a href="index.html?cat=gorsel">Görsel Promptları</a>
+          <a href="index.html?cat=video">Video Promptları</a>
+          <a href="../../games/index.html">Oyunlar</a>
+          <a href="index.html?cat=3d">3D Modelleme</a>
+          <a href="index.html?cat=odev">Ödev Düzenleme</a>
+          <a href="index.html?cat=kod">Kod Promptları</a>
+        </div>
+      </li>
+      <li><a href="../topluluk/index.html" class="nav-highlight">Sosyal</a></li>
+      <li><a href="../kurumsal/hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="../kurumsal/iletisim.html">İletişim</a></li>
+      <span id="customNavLinks"></span>
+      <li id="accountMenuSlot" class="account-menu"><button class="account-btn" onclick="window.openAuthModal && window.openAuthModal('login')" type="button">Hesap</button></li>
+    </ul>
+  </nav>
+</header>
+<section class="detail-section prompt-library-header">
+  <div class="detail-header"><span class="eyebrow">PROMPT KÜTÜPHANESİ</span><h1>60 profesyonel promptu keşfet</h1><p>Her prompt; kategori, model, seviye, değişkenler, hızlı–gelişmiş–uzman sürümler ve canlı Builder içerir.</p></div>
+  <div class="container-wide"><div id="promptFilters" class="prompt-filter-panel"></div><div class="prompt-result-bar"><strong id="promptResultCount">60 prompt bulundu</strong><div><a class="mini-action-btn" href="olusturucu.html">Prompt Builder</a><a class="mini-action-btn" href="koleksiyonlar.html">Koleksiyonlar</a></div></div></div>
+</section>
+<section id="prompt-library" class="prompt-library-modern"><div class="container-wide"><div class="prompt-grid-modern" id="promptGrid"></div><div id="promptPagination" class="prompt-pagination"></div></div></section>
+<footer>
+  <div class="footer-about"><h3>PROMPTLA</h3><p>Yapay zeka araçlarını, prompt mantığını ve topluluk paylaşımlarını tek çatı altında toplayan eğitim odaklı web platformu.</p></div>
+  <div class="footer-bottom"><p>© 2026 PROMPTLA. Tüm hakları saklıdır.</p><div class="socials">promptladigital@gmail.com</div></div>
+</footer>
+<script src="../../assets/js/script.js?v=mobilefix2"></script>
+<script src="../../assets/js/prompt-data.js?v=2"></script>
+<script src="../../assets/js/html-app.js?v=mobilefix2"></script>
+
+</body>
+</html>

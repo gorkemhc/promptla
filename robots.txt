@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://promptla.page.gd/sitemap.xml
+Sitemap: https://gorkemhc.github.io/promptla/sitemap.xml

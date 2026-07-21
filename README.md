@@ -12,21 +12,20 @@ Yapay zekâ araçlarını tanıtan, etkili prompt yazımını öğreten ve kulla
 
 ## Proje Hakkında
 
-PROMPTLA; yapay zekâ modellerini yalnızca tanıtmakla kalmayıp, kullanıcıların doğru ve etkili prompt yazma mantığını öğrenmesini hedefleyen statik bir web projesidir.
+PROMPTLA; yapay zekâ modellerini yalnızca tanıtmakla kalmayıp kullanıcıların doğru ve etkili prompt yazma mantığını öğrenmesini hedefleyen, tamamen statik çalışan bir web projesidir.
 
-Platform içerisinde yapay zekâ model tanıtımları, kategori bazlı prompt örnekleri, doldurulabilir prompt oluşturucu, sosyal paylaşım ekranları ve HTML Canvas tabanlı mini oyunlar yer alır.
+Platformda model rehberleri, kategori bazlı prompt kütüphanesi, doldurulabilir Prompt Builder, yerel hesap ve topluluk demoları ile HTML Canvas tabanlı mini oyunlar bulunur.
 
 ## Öne Çıkan Özellikler
 
-- Yapay zekâ modelleri için tanıtım ve rehber sayfaları
-- Kategori bazlı prompt kütüphanesi
-- Doldurulabilir ve canlı önizlemeli Prompt Builder
-- Kopyalama, kaydetme ve paylaşma etkileşimleri
-- Responsive ve mobil uyumlu tasarım
-- Koyu tema ve modern arayüz
+- Yapay zekâ modelleri için ayrıntılı rehber sayfaları
+- Kategori, arama ve filtreleme destekli prompt kütüphanesi
+- Canlı önizlemeli, üç seviyeli Prompt Builder
+- Prompt kopyalama, kaydetme, koleksiyon ve paylaşım akışları
+- Responsive ve mobil uyumlu modern koyu tema
 - HTML Canvas tabanlı oynanabilir mini oyunlar
-- Statik yapı sayesinde sunucu gerektirmeden çalışabilme
-- GitHub Pages üzerinde ücretsiz yayınlanabilme
+- PHP veya veritabanı gerektirmeyen statik yapı
+- GitHub Pages ile ücretsiz yayın desteği
 
 ## Kullanılan Teknolojiler
 
@@ -49,80 +48,85 @@ Platform içerisinde yapay zekâ model tanıtımları, kategori bazlı prompt ö
 
 ![PROMPTLA Yılan Oyunu](docs/screenshots/yilan-oyunu.png)
 
-## Projeyi Çalıştırma
-
-Bu proje statik HTML, CSS ve JavaScript kullanır. Herhangi bir paket kurulumu veya yerel sunucu zorunlu değildir.
-
-1. Repoyu bilgisayarınıza klonlayın:
-
-```bash
-git clone https://github.com/gorkemhc/promptla.git
-```
-
-2. Proje klasörüne girin:
-
-```bash
-cd promptla
-```
-
-3. `index.html` dosyasını tarayıcıda açın.
-
-Daha sağlıklı bir geliştirme deneyimi için Visual Studio Code üzerindeki **Live Server** eklentisi de kullanılabilir.
-
 ## Klasör Yapısı
 
 ```text
 promptla/
-├── assets/              # CSS ve JavaScript dosyaları
-├── games/               # Gelişmiş mini oyun sayfaları
-├── images/              # Genel proje görselleri
-├── oyunlar/             # Oyun modülü sayfaları
-├── uploads/             # Demo yükleme alanı
+├── assets/
+│   ├── css/              # Stil dosyaları
+│   ├── images/           # Site görselleri ve küçük görseller
+│   └── js/               # Uygulama, veri ve oyun betikleri
 ├── docs/
-│   └── screenshots/     # README ekran görüntüleri
-├── index.html            # Ana sayfa
-├── 404.html              # Özel 404 sayfası
+│   ├── screenshots/      # README ekran görüntüleri
+│   └── YAYINLAMA_NOTU.txt
+├── games/                # Oyun merkezi ve oynanabilir oyunlar
+├── pages/
+│   ├── egitim/           # Rehber ve yapay zekâ araştırmaları
+│   ├── hesap/            # Giriş, kayıt ve profil
+│   ├── kurumsal/         # Hakkımızda ve iletişim
+│   ├── modeller/         # Yapay zekâ model rehberleri
+│   ├── promptlar/        # Kütüphane, detay, oluşturucu ve koleksiyonlar
+│   ├── topluluk/         # Sosyal paylaşım alanı
+│   └── yonetim/          # Yerel demo yönetim paneli
+├── 404.html              # Özel hata sayfası
+├── index.html            # Ana giriş sayfası
 ├── robots.txt            # Arama motoru yönergeleri
 ├── sitemap.xml           # Site haritası
 └── site.webmanifest      # Web uygulaması bilgileri
 ```
 
-## Canlı Demo
+## Yerel Olarak Çalıştırma
 
-Proje GitHub Pages üzerinden yayınlanabilir:
+Herhangi bir paket veya sunucu kurulumu zorunlu değildir.
+
+```bash
+git clone https://github.com/gorkemhc/promptla.git
+cd promptla
+```
+
+Ardından kök dizindeki `index.html` dosyasını tarayıcıda açın. Geliştirme sırasında Visual Studio Code **Live Server** eklentisi de kullanılabilir.
+
+## GitHub Pages ile Yayınlama
+
+1. Repo içindeki **Settings** bölümüne girin.
+2. Sol menüden **Pages** seçeneğini açın.
+3. Kaynak olarak **Deploy from a branch** seçin.
+4. Branch alanında `main`, klasör alanında `/(root)` seçin.
+5. Kaydedin.
+
+Canlı adres:
 
 **https://gorkemhc.github.io/promptla/**
 
-GitHub Pages henüz aktif değilse:
+## Demo Bilgileri
 
-1. Repo içinde `Settings` bölümüne girin.
-2. Sol menüden `Pages` seçeneğini açın.
-3. `Deploy from a branch` seçeneğini seçin.
-4. Branch olarak `main`, klasör olarak `/root` belirleyin.
-5. `Save` butonuna basın.
+Yerel yönetim panelini incelemek için:
+
+```text
+E-posta: admin@promptla.local
+Şifre: PromptlaDemo2026!
+```
+
+Bu hesap ve diğer kullanıcı verileri yalnızca tarayıcının `localStorage` alanında tutulur.
 
 ## Mevcut Sürüm Hakkında
 
-Bu sürüm tamamen statik çalışır. Giriş, kayıt, yorum, admin işlemleri ve veri saklama gibi bazı alanlar demo amaçlıdır veya tarayıcı tarafında çalışır.
-
-Gerçek kullanıcı sistemi, kalıcı veritabanı ve yönetim paneli için ilerleyen sürümlerde Firebase ya da farklı bir backend altyapısı entegre edilebilir.
+Bu sürüm tamamen statiktir. Giriş, kayıt, yorum, paylaşım ve yönetim işlemleri demo amacıyla tarayıcı tarafında çalışır. Gerçek kullanıcı yönetimi ve kalıcı veri için ileride Firebase veya farklı bir backend servisi bağlanabilir.
 
 ## Yol Haritası
 
-- Firebase Authentication entegrasyonu
-- Firestore tabanlı yorum ve sosyal paylaşım sistemi
-- Gerçek kullanıcı profilleri
-- Gelişmiş arama ve filtreleme
-- Daha fazla prompt kategorisi
-- Performans ve erişilebilirlik iyileştirmeleri
-- PWA desteğinin genişletilmesi
+- Firebase Authentication ve Firestore entegrasyonu
+- Gerçek kullanıcı profilleri ve kalıcı topluluk sistemi
+- Gelişmiş arama, filtreleme ve koleksiyon araçları
+- Performans, erişilebilirlik ve PWA iyileştirmeleri
+- Yeni prompt kategorileri ve oyun örnekleri
 
 ## Geliştirici
 
 **Görkem Hiçyılmaz**
 
 - GitHub: [@gorkemhc](https://github.com/gorkemhc)
-- Proje: [PROMPTLA](https://github.com/gorkemhc/promptla)
+- Proje deposu: [gorkemhc/promptla](https://github.com/gorkemhc/promptla)
 
 ---
 

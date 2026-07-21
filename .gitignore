@@ -1,0 +1,12 @@
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editör
+.vscode/
+.idea/
+
+# Geçici ve paket dosyaları
+*.zip
+*.log
